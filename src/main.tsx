@@ -4,9 +4,11 @@ import App from './Components/App.tsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div className="border-2 bg-white p-24 h-full w-full">
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </div>,
 )
 
 // Use contextBridge

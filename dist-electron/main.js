@@ -1,8 +1,6 @@
 import { app, BrowserWindow, Menu } from "electron";
-import { createRequire } from "node:module";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-createRequire(import.meta.url);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 process.env.APP_ROOT = path.join(__dirname, "..");
 const VITE_DEV_SERVER_URL = process.env["VITE_DEV_SERVER_URL"];
@@ -16,9 +14,9 @@ function createWindow() {
     webPreferences: {
       preload: path.join(__dirname, "preload.mjs")
     },
-    frame: false,
+    frame: true,
     width: 800,
-    height: 600,
+    height: 800,
     transparent: true
   });
   win.resizable = false;

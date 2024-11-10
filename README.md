@@ -27,9 +27,9 @@ Made components folder and put into it App.tsx. Updated import references.
 
 
 ## Objectives Front
-  - [ ] Make a circular frame filling al the frame's height.
-  - [ ] Use a custom Menu Frame Bar to minimize and close.
-  - [ ] Add a dropdown menu with: <br>NewConnection<br>Save Conn JSON<br>Open Conn JSON
+  - [x] <del>Make a circular frame filling al the frame's height.(Deleted, so ugly idk what I was thinking about)<del>
+  - [x] Use a custom Menu Frame Bar to minimize and close.(Did but prefered default OS frame)
+  - [x] Add a dropdown menu with: <br>NewConnection<br>Save Conn JSON<br>Open Conn JSON(With Default)
   - [ ] Add a Empty Table
   - [ ] Make a new small frame in order to introduce data to connect.
   - [ ] Fill new frame with Text Inputs.
