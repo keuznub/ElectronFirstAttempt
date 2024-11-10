@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# React + Vite + Electron + Tailwind
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Instalations done
+Followed tailwinds's vite guide
 ```
+npm create vite-electron
+npm i
+npm i -D tailwindcss
+npx tailwindcss init
+npm i -D vite-tsconfig-paths 
+```
+Used typescript<br>
+Configured tailwind.config.js<br>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Added <br>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;<br>
+to ./src/index.css
+
+Imported and added plugin tsConfigPaths() to vite.config.ts.
+
+
+## Start Modifications
+
+Made components folder and put into it App.tsx. Updated import references.
+
+
+## Objectives Front
+  - [ ] Make a circular frame filling al the frame's height.
+  - [ ] Use a custom Menu Frame Bar to minimize and close.
+  - [ ] Add a dropdown menu with: <br>NewConnection<br>Save Conn JSON<br>Open Conn JSON
+  - [ ] Add a Empty Table
+  - [ ] Make a new small frame in order to introduce data to connect.
+  - [ ] Fill new frame with Text Inputs.
+
+## Objectives Backend
+  - [ ] To Do
+
+  
